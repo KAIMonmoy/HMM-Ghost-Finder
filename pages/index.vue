@@ -245,9 +245,9 @@ export default {
       else return "mid";
     },
     propagateProbability() {
-      let tempBoardProbs = Array(this.nRow)
+      let tempBoardProbs = Array(Number(this.nRow))
         .fill(0)
-        .map((row) => Array(this.nColumn).fill(0.0));
+        .map((row) => Array(Number(this.nColumn)).fill(0.0));
 
       for (let i = 0; i < Number(this.nRow); ++i) {
         for (let j = 0; j < Number(this.nColumn); ++j) {
